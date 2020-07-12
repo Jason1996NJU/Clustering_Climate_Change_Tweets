@@ -1,5 +1,5 @@
-# NLP_Project
-Metis Project 04
+# Clustering Climate Change Tweets
+Metis Project 04, Part II
 
 ## Overview
 
