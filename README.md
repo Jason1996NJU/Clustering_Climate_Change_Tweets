@@ -26,7 +26,7 @@ The primary machine learning technique used for this project were natural langua
 		- The majority of denier tweets were written in the South.
 		- Most users are in the Northeast, South, and West Coast.
 		- There is a higher ratio of deniers to believers in the South and Southwest.
-2. Project_04_US_NMF
+2. US_NMF_30_Clusters
 	- Before performing any NLP or clustering, a US region and tweet sentiment were assigned to each tweet.
 	- Each tweet was then lemmatized, tokenized, and tagged with a part of speech. It was determined that nouns were the most important words in each tweet to identify topics.
 	- Topic modeling was then performed with TFIDF vectorization and NMF.
@@ -34,3 +34,33 @@ The primary machine learning technique used for this project were natural langua
 		- A scree plot was used to determine the ideal number of principal components.
 	- Finally, k-means clustering was performed.
 		- Inertia and silhouette scores were used to determine the optimum number of clusters.
+
+## Summary of Findings
+- 54 clusters were used because it resulted in the best silhouette score.
+- With this number of clusters, every possible combination of the three main features (believer vs denier, region, tweet sentiment) was represented by a cluster.
+- Trends:
+	- Deniers across every US region are primarily concerned with 3 topics:
+	    - Al Gore
+	    - Oil company lawsuit
+	    - Mini Ice Age
+	- Believers across the country discuss a wider range of topics, summarized below:
+	    - Northeast
+	        - Donald Trump lying about climate change
+	        - Animals at risk due to climate change
+	    - West Coast
+	        - Activism and progressive policies
+	        - Scott Pruitt and the cost of climate change
+	    - Midwest
+	        - 2017 report discussing the dangers of climate change
+	        - Ralph Alexander
+	    - Rockies
+	        - CO2 and greenhouse gas emissions
+	    - Southwest
+	        - 2017 report discussing the dangers of climate change
+	    - South
+	        - Obama Era Policies
+	    - Alaska
+	        - Reports contradicting Trump administration regarding human impact on climate change
+	        - 2017 report discussing the dangers of climate change
+	    - Hawaii
+	        - Sea level rise
